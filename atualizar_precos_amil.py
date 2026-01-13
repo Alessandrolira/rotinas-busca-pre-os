@@ -86,12 +86,6 @@ for copart in coparticipacao:
                 print(response.status_code, regiao, empresa, linha, len(data), copart)
                 resposta.append({f"{regiao}_{empresa}_{copart}": data})
 
-# with open("Valores-amil.json", "w", encoding="utf-8") as f:
-#     import json
-#     json.dump(resposta, f, ensure_ascii=False, indent=4)
-
-# print(resposta)  # Exemplo de saída para a primeira região
-
 # ============================= 
 # VALIDAÇÃO 
 # ============================= 
