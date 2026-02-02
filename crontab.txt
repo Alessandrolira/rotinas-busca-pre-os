@@ -2,3 +2,4 @@ SHELL=/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 0 8,18 * * * root /app/run_precos.sh
 10 8,18 * * * root /app/run_rede.sh
+20 8,18 * * * root /app/run_precos_santa_helena.sh

@@ -15,10 +15,10 @@ RUN mkdir -p /logs
 
 # Copia o cron
 COPY crontab.txt /etc/cron.d/amil-cron
-RUN chmod 0644 /etc/cron.d/amil-cron
-RUN crontab /etc/cron.d/amil-cron
+RUN sed -i 's/\r$//' /etc/cron.d/amil-cron && \
+    chmod 0644 /etc/cron.d/amil-cron
 
 # Garante que os scripts são executáveis
-RUN chmod +x /app/run_precos.sh /app/run_rede.sh
+RUN chmod +x /app/run_precos.sh /app/run_rede.sh /app/run_precos_santa_helena.sh
 
 CMD ["cron", "-f"]
