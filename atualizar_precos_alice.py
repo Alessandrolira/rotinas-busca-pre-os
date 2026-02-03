@@ -27,7 +27,7 @@ COLUNAS = [
     ("Equilíbrio", "Apartamento"),
     ("Conforto", "Apartamento"),
     ("Conforto", "Apartamento+"),
-    ("Super Conforto", None),
+    ("Super Conforto", "Apartamento"),
     ("Exclusivo", "Apartamento"),
     ("Exclusivo", "Apartamento+"),
     ("Exclusivo", "Apartamento++"),
